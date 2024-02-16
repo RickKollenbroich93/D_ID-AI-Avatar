@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  padding: 4rem;
+  gap: 3rem;
+}
+
+.content {
+  display: grid;
+  width: 50%;
+}
+
+.contentForm {
+  width: 50%;
+}
+
+.form {
+  display: grid;
+  padding-top: 4rem;
+  gap: 2rem;
+}
+
+.inputWrapper {
+  display: grid;
+  gap: 1rem;
+}
+
+.title {
+  color: rgb(193, 13, 13);
+  line-height: 0;
+}
+
+.titleDiscription {
+  color: rgb(193, 13, 13);
+  line-height: 0;
+}
+
+.input {
+  border: solid 1px rgb(193, 13, 13);
+  height: 1.5rem;
+  width: 100%;
+}
+
+.inputCheck {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.highlight {
+  color: rgb(193, 13, 13);
+  font-weight: bold;
+}

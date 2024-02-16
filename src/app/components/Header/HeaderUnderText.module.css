@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  background-color: rgb(193, 13, 13);
+  width: 100%;
+  justify-content: center;
+}
+
+.text {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 0;
+  margin: 1.5rem;
+}

@@ -1,15 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from './Pages/Home';
 
 function App(): JSX.Element {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/about">
-          <p>About</p>
-        </Route>
         <Route path="/">
-          <p>Home</p>
+          <Home />
         </Route>
       </Switch>
     </BrowserRouter>
