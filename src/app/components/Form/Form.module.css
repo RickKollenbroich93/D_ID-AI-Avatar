@@ -4,13 +4,18 @@
   gap: 3rem;
 }
 
-.content {
+.containerMob {
   display: grid;
+  padding: 2rem;
+  gap: 3rem;
+}
+
+.content {
   width: 50%;
 }
 
-.contentForm {
-  width: 50%;
+.contentMob {
+  width: 100%;
 }
 
 .form {
@@ -26,12 +31,10 @@
 
 .title {
   color: rgb(193, 13, 13);
-  line-height: 0;
 }
 
 .titleDiscription {
   color: rgb(193, 13, 13);
-  line-height: 0;
 }
 
 .input {
@@ -49,4 +52,43 @@
 .highlight {
   color: rgb(193, 13, 13);
   font-weight: bold;
+}
+
+.modalContainerOuter {
+  width: 100%;
+  z-index: 3;
+  background: rgba(100, 100, 100, 0.801);
+  border: 1px solid #ccc;
+  transition: 1.1s ease-out;
+  box-shadow: -2rem 2rem 2rem rgba(black, 0.2);
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+}
+
+.modalContainer {
+  background: white;
+  position: absolute;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  width: 40%;
+  height: 40%;
+  overflow: auto;
+  padding: 2rem;
+  justify-content: center;
+  display: grid;
 }

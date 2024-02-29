@@ -4,3 +4,10 @@
   padding-left: 4rem;
   padding-right: 4rem;
 }
+
+.containerMob {
+  color: #fff;
+  background-color: rgb(193, 13, 13);
+  padding-left: 2rem;
+  padding-right: 2rem;
+}

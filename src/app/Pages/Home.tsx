@@ -7,13 +7,24 @@ import Form from '../components/Form/Form';
 import FotoBox from '../components/FotoBox/FotoBox';
 
 function Home(): JSX.Element {
+  const [width, setWidth] = React.useState(window.innerWidth);
+
+  React.useEffect(() => {
+    const handleResizeWindow = () => setWidth(window.innerWidth);
+    // subscribe to window resize event "onComponentDidMount"
+    window.addEventListener('resize', handleResizeWindow);
+    return () => {
+      // unsubscribe "onComponentDestroy"
+      window.removeEventListener('resize', handleResizeWindow);
+    };
+  }, []);
   return (
     <div className={classes.container}>
-      <Header />
-      <FotoBox />
-      <Form />
-      <TextBox />
-      <Footer />
+      <Header windowSize={width} />
+      {width >= 900 && <FotoBox />}
+      <Form windowSize={width} />
+      <TextBox windowSize={width} />
+      <Footer windowSize={width} />
     </div>
   );
 }

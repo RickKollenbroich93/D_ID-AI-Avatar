@@ -4,7 +4,11 @@ import classes from './Header.module.css';
 import Countdown from '../CountDown/Countdown';
 import HeaderUnderText from './HeaderUnderText';
 
-function Header(): JSX.Element {
+type HeaderProps = {
+  windowSize: number;
+};
+
+function Header({ windowSize }: HeaderProps): JSX.Element {
   const [time, setTime] = useState(Date.now());
   const date = Date();
 
@@ -21,9 +25,19 @@ function Header(): JSX.Element {
 
   return (
     <div className={classes.container}>
-      <h1 className={classes.title}>Title</h1>
-      <Countdown days={days} hours={hours} minutes={minutes} />
-      <HeaderUnderText />
+      {windowSize >= 900 && <div className={classes.imgContainerLogo}></div>}
+
+      <h1 className={classes.title}>
+        ORIGINAL {windowSize <= 700 && <br />} Klappi-Treffen
+      </h1>
+
+      <Countdown
+        windowSize={windowSize}
+        days={days}
+        hours={hours}
+        minutes={minutes}
+      />
+      <HeaderUnderText windowSize={windowSize} />
     </div>
   );
 }

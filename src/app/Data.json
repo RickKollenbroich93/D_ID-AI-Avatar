@@ -1,0 +1,14 @@
+{
+  "starter": [
+    {
+      "name": "Patrick",
+      "email": "Owner",
+      "startnummer": 13
+    },
+    {
+      "name": "Elli",
+      "email": "Owner",
+      "startnummer": 1
+    }
+  ]
+}

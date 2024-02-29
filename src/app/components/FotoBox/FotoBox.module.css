@@ -3,5 +3,10 @@
 }
 
 .gallery {
-  height: 20rem;
+  overflow: hidden;
+  max-height: 30rem;
+}
+
+.title {
+  color: rgb(193, 13, 13);
 }

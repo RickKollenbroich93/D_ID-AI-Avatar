@@ -1,6 +1,26 @@
 .container {
   display: grid;
+  height: 60rem;
   background-color: black;
+  background-image: url('./../../assets/Pictures/P1674265-Verbessert-NR.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  align-content: space-between;
+}
+
+.titleContainer {
+  display: flex;
+}
+
+.imgContainerLogo {
+  width: 100px;
+  height: 148px;
+  position: absolute;
+  left: 50px;
+  top: 0;
+  background-image: url('./../../assets/Pictures/ORIGINAL_Logo_2c_100x170.jpg');
 }
 
 .title {

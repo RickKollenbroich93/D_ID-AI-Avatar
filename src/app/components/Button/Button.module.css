@@ -7,3 +7,13 @@
   font-weight: bold;
   text-transform: uppercase;
 }
+
+.buttonInactive {
+  color: #fff;
+  background: rgb(179, 162, 162);
+  font-size: 0.8em;
+  padding: 0.8em 2em;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}

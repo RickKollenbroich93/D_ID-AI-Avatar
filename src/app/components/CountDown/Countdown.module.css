@@ -1,24 +1,48 @@
 .container {
   display: flex;
-  width: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
   justify-content: center;
   gap: 3rem;
 }
 
+.containerMob {
+  display: grid;
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
 .countContainer {
   display: grid;
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.countContainerMob {
+  display: grid;
+  border-radius: 20px;
   text-align: center;
   font-weight: bold;
 }
 
 .text {
   color: #fff;
+  font-size: 2rem;
+  text-shadow: 3px 3px 3px rgb(193, 13, 13);
   font-weight: bold;
 }
 
 .number {
   font-size: 4rem;
   font-weight: bold;
+  text-shadow: 3px 3px 3px rgb(193, 13, 13);
   color: #fff;
   line-height: 0;
   margin-bottom: 1rem;
