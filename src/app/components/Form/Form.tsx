@@ -52,6 +52,7 @@ function Form({ windowSize }: FormProps): JSX.Element {
     window.paypal
       .Buttons({
         createOrder: (data: any, actions: any, err: any) => {
+          console.log(data || err);
           return actions.order.create({
             intent: 'CAPTURE',
             purchase_units: [
@@ -66,6 +67,7 @@ function Form({ windowSize }: FormProps): JSX.Element {
           });
         },
         onApprove: async (data: any, actions: any) => {
+          console.log(data);
           const order = await actions.order.capture();
           addStarter(newStarter);
           setPayed(true);

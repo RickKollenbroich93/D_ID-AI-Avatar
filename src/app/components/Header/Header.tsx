@@ -10,6 +10,7 @@ type HeaderProps = {
 
 function Header({ windowSize }: HeaderProps): JSX.Element {
   const [time, setTime] = useState(Date.now());
+  console.log(time);
   const date = Date();
 
   const days = differenceInDays(new Date(2024, 7, 3, 0, 0), new Date(date));

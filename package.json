@@ -22,8 +22,8 @@
     "@storybook/addon-links": "^6.4.0-alpha.32",
     "@storybook/react": "^6.4.0-alpha.32",
     "@types/express": "^4.17.13",
-    "@types/node": "^16.4.13",
-    "@types/react": "^17.0.18",
+    "@types/node": "^16.18.86",
+    "@types/react": "^18.2.61",
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.1.8",
     "@typescript-eslint/eslint-plugin": "^4.28.5",
@@ -41,7 +41,7 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^22.0.0",
     "ts-node-dev": "^1.1.8",
-    "typescript": "^4.3.2",
+    "typescript": "^4.9.5",
     "vite": "^2.4.4"
   },
   "dependencies": {
@@ -56,7 +56,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-photo-album": "^2.3.1",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^6.22.2"
   },
   "main": "vite.config.js",
   "author": "",

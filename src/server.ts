@@ -1,6 +1,6 @@
 // import dotenv from 'dotenv';
 // dotenv.config();
-import type { WithId, Document, ObjectId } from 'mongodb';
+import type { ObjectId } from 'mongodb';
 import express from 'express';
 import { MongoClient } from 'mongodb';
 
