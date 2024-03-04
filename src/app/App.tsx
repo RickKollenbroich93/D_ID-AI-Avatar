@@ -1,13 +1,13 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
 
 function App(): JSX.Element {
   return (
     <BrowserRouter>
-      <Route path="/">
-        <Home />
-      </Route>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+      </Routes>
     </BrowserRouter>
   );
 }
